@@ -1,0 +1,638 @@
+/*
+Theme Name:  JR49GAMES
+Theme URL:  https://jr49games.com
+Author: Sérgio dos Reis
+Author URL:  https://jr49games.com
+Description:  Indie Game Studio
+Version:  1.0
+*/
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Open Sans', sans-serif;
+}
+
+html, body{
+	height: 100%;
+}
+
+/*
+
+Classe auxiliares
+
+*/
+
+.center{
+	max-width: 2000px;
+	margin: 0 auto;
+	padding: 0 2%;
+}
+
+.flex{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	flex-wrap: nowrap;
+}
+
+.clear{
+	clear: both;
+}
+
+.align{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+section.construction{
+	width: 100%;
+	height: 1000px;
+	padding: 40px;
+	display: flex;
+	justify-content: center;
+}
+
+button{
+	animation: shake 1s;
+  	animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+	0% { transform: translate(1px, 1px) rotate(0deg); }
+	10% { transform: translate(-1px, -2px) rotate(-1deg); }
+	20% { transform: translate(-3px, 0px) rotate(1deg); }
+	30% { transform: translate(3px, 2px) rotate(0deg); }
+	40% { transform: translate(1px, -1px) rotate(1deg); }
+	50% { transform: translate(-1px, 2px) rotate(-1deg); }
+	60% { transform: translate(-3px, 1px) rotate(0deg); }
+	70% { transform: translate(3px, 1px) rotate(-1deg); }
+	80% { transform: translate(-1px, -1px) rotate(1deg); }
+	90% { transform: translate(1px, 2px) rotate(0deg); }
+	100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
+
+
+/*****/
+
+
+/*
+	Header Desktop
+*/
+
+header{
+	background-color: #cbe0ec;
+	width: 100%;
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+
+.logo{
+	float: left;
+}
+
+.logo a img{
+	width: 100px;
+}
+
+.menu-container-desktop{
+	float: right;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: nowrap;
+	margin-top: 10px;
+}
+
+.menu-desktop li{
+	list-style-type: none;
+	display: inline-flex;
+	padding: 5px 20px;
+}
+
+.menu-desktop li a {
+	color: #3d5a80;
+	font-size: 24px;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.menu-desktop li a:hover{
+	color: rgb(238, 108, 77);
+}
+
+.mediasocial-desktop ul{
+	display: flex;
+}
+
+.mediasocial-desktop li{
+	width: 100%;
+	list-style-type: none;
+	display: row;
+	padding: 10px 20px;
+}
+
+.mediasocial-desktop i{
+	font-size: 24px;
+	color: #3d5a80;
+}
+
+
+/*
+		Header Mobile
+*/
+
+.header-mobile{
+	display: none;
+}
+
+.container-mobile{
+	background-color: #cbe0ec;
+	width: 100%;
+	padding: 40px;
+}
+
+.menu-icon{
+	display: none;
+}
+
+.fa-solid{
+	float: left;
+	color: #3d5a80;
+	font-size: 40px;
+	cursor: pointer;
+}
+
+.logo-mobile{
+	margin-bottom: 40px;
+}
+
+.logo-mobile img{
+	width: 100px;
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%,0);
+}
+
+.menu-container-mobile{
+	display: none;
+}
+
+
+.menu-mobile{
+	text-align: center;
+}
+
+.menu-mobile li{
+	list-style-type: none;
+	background-color: #cbe0ec;
+	padding: 10px 0;
+	border-top: 1px solid #3d5a80;
+}
+
+.menu-mobile li a{
+	display: block;
+	text-decoration: none;
+	font-size: 24px;
+	color: #3d5a80;
+	font-weight: bold;
+}
+
+.mediasocial-mobile ul{
+	display: flex;
+	justify-content: space-around;
+	padding: 10px;
+	border-top: 1px solid #3d5a80;
+	border-bottom: 1px solid #3d5a80;
+	background-color: #cbe0ec;
+}
+
+.mediasocial-mobile li{
+	list-style-type: none;
+}
+
+.mediasocial-mobile i{
+	font-size: 20px;
+	color: #3d5a80;
+}
+
+
+/*
+	Index
+*/
+
+.path{
+	width: 50%;
+	padding: 40px 20px;
+}
+
+
+.path h2{
+	color: #3d5a80;
+	padding: 10px 0px;
+	font-size: 40px;
+	text-align: left;
+	margin-top: 40px;
+}
+
+.path p{
+	color: #3d5a80;
+	max-width: 500px;
+	padding: 10px 0px;
+	font-size: 24px;
+	text-align: justify;
+}
+
+.path li{
+	color: #3d5a80;
+	max-width: 500px;
+	padding: 10px 0px;
+	font-size: 24px;
+	list-style-type: square;
+
+}
+
+section.content1 .path a{
+	background-color: #3d5a80;
+	margin-top: 10px;
+	width: 150px;
+	padding: 15px 0;
+	border-radius: 10px;
+	text-decoration: none;
+	color: white;
+	text-align: center;
+	box-shadow:0px 5px rgba(61, 90, 128, 0.6);
+}
+
+.box p{
+	max-width: 100%;
+}
+
+.image{
+	padding: 60px;
+	display: flex;
+	align-items: center;
+}
+
+.image img{
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.6);
+	max-width: 800px;
+}
+
+.content2{
+	background-color: #cbe0ec;
+	padding: 60px 0;
+}
+
+.monitor img{
+	max-width: 400px;
+}
+
+.monitor p{
+	color: #3d5a80;
+	padding: 24px;
+	font-size: 24px;
+	text-align: justify;
+	max-width: 400px;
+}
+
+.joystick img{
+	max-width: 300px;
+}
+
+.joystick p{
+	color: #3d5a80;
+	padding: 24px 0px;
+	font-size: 24px;
+	text-align: justify;
+	max-width: 400px;
+}
+
+.content3{
+	display: flex;
+	justify-content: center;
+}
+
+
+.getemail{
+	background-color: #3d5a80;
+	position: relative;
+	z-index: 10;
+	top: -100px;
+	max-width: 1000px;
+	margin: 0 auto;
+	padding: 40px 0;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.6);
+	border-radius: 20px;
+}
+
+.getemail h2{
+	color: white;
+	padding: 0 20px;
+	font-size: 36px;
+	text-align: center;
+}
+
+.getemail p{
+	color: white;
+	padding: 24px 0px;
+	font-size: 24px;
+	text-align: center;
+}
+
+
+.getemail-wrapper{
+	display: flex;
+	flex-direction: column;
+	
+}
+
+.wrapper-email{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin: 0 auto;
+}
+
+.getemail-wrapper label{
+	font-size: 18px;
+	color: white;
+	padding: 10px 0;
+}
+
+.getemail-wrapper input[type=text]{
+	width: 500px;
+	padding: 10px;
+	border-radius: 10px;
+	
+}
+
+input[type=submit]{
+	width: 100px;
+	padding: 10px;
+	margin: 10px auto;
+	background-color: #cbe0ec;
+	color: black;
+	font-weight: bold;
+	border-radius: 10px;
+	cursor: pointer;
+}
+
+
+/*
+
+	Path
+
+*/
+
+.buttonsteam{
+	padding: 20px;
+}
+
+.buttonsteam h2{
+	color: #3d5a80;
+	padding: 10px 0px;
+	font-size: 40px;
+	text-align: center;
+}
+
+.gif img{
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.6);
+}
+
+.youtube{
+	padding: 10px;
+}
+
+.youtube h2{
+	color: #3d5a80;
+	padding: 10px 0px;
+	font-size: 34px;
+	text-align: left;
+}
+
+.gallery{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+
+}
+
+.gallery img{
+	max-width: 500px;
+	height: auto;
+	padding: 10px;
+}
+
+.form2{
+	width: 50%;
+	height: 1200px;
+	background-color: #3d5a80;
+	border-radius: 40px;
+	padding: 20px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.6);
+}
+
+.form2-wrapper{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.form2-wrapper h2{
+	color: white;
+	text-align: center;
+	font-size: 30px;
+}
+
+.form2-wrapper p{
+	padding: 10px;
+	font-size: 20px;
+	color: white;
+	text-align: center;
+}
+
+.form2 form{
+	display: flex;
+	flex-direction: column;
+	width: 60%;
+	margin: 0 auto;
+}
+
+.form2 form label{
+	padding: 10px 0;
+	color: white;
+	font-size: 18px;
+}
+
+.form2 form input[type=text]{
+	padding: 10px;
+	width: 100%;
+	border-radius: 10px;
+}
+
+.form2 form textarea{
+	padding: 10px;
+	width: 100%;
+	height: 200px;
+	border-radius: 10px;
+
+}
+
+.form2 form select{
+	padding: 10px;
+	width: 100px;
+}
+
+
+/*
+
+Footer
+
+*/
+
+footer {
+	background-color: #98c1d9;
+	width: 100%;
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+
+footer h4{
+	color: #3d5a80;
+	float: left;
+	margin-top: 20px;
+}
+
+/*
+
+Responsivo
+
+*/
+@media screen and (max-width:  1024px){
+.center{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.logo{
+	margin-bottom: 20px;
+}
+
+.youtube iframe{
+	max-width: 100%;
+	max-height: 600px;
+}
+
+.gallery{
+	display: flex;
+	flex-direction: column;
+}
+
+.gallery img{
+	max-width: 100%;
+}
+
+.form2{
+	width: 90%;
+}
+
+.getemail{
+	max-width: 100%;
+}
+
+
+.getemail h2{
+	font-size: 28px;
+}
+
+.getemail p{
+	font-size: 18px;
+}
+
+.getemail label{
+	font-size: 16px;
+}
+
+.getemail input[type=text]{
+	width: 380px;
+}
+
+.footer{
+	display: none;
+}
+
+
+@media screen and (max-width:  768px){
+
+.center{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+
+header{
+	display: none;
+}
+
+.header-mobile{
+	display: block;
+}
+
+.menu-icon{
+	display: block;
+}
+
+.header-mobile{
+	display: block;
+}
+
+.menu-container-desktop{
+	display: none;
+}
+
+.path{
+	width: 100%;
+}
+
+.path h2{
+	font-size: 30px;
+}
+
+.path p{
+	font-size: 20px;
+}
+
+.path li{
+	font-size: 20px;
+}
+
+.image{
+	padding: 0 2%;
+}
+
+.image img{
+	max-width: 100%;
+}
+
+.monitor img{
+	padding: 40px 40px;
+}
+
+.monitor p{
+	font-size: 20px;
+}
+
+.joystick p{
+	font-size: 20px;
+}
+
+.youtube iframe{
+	max-width: 100%;
+	max-height: 300px;
+}
+	
+}
