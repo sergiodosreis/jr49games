@@ -2,6 +2,10 @@
 
 Welcome to the JR 49 Games Website project! This repository contains all the code and resources needed to create an immersive and captivating website for your game studio using HTML, CSS, JavaScript, and PHP. Whether you're a game developer aiming to establish a strong online presence for your studio or a developer looking to build a showcase website, this README will guide you through the setup and usage of this game studio website template.
 
+## Preview
+
+<img src="https://github.com/sergiodosreis/jr49games/blob/main/preview.PNG" height="300">
+
 ## Table of Contents
 
 - Introduction
